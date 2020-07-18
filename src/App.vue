@@ -1,28 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <app-Navbar></app-Navbar>
+    <app-carou></app-carou>
+    <app-card></app-card>
+    <app-img></app-img>
+    <app-footer></app-footer>
+
+    <app-Home></app-Home>
+    <!-- <Home msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+import carou from './components/carou'
+import card from './components/card'
+import img from './components/img'
+import footer from './components/footer'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'app-Home': Home,
+    'app-Navbar':Navbar,
+    'app-carou':carou,
+    'app-card': card,
+    'app-img': img,
+    'app-footer': footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
 </style>
