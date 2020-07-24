@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-Navbar></app-Navbar>
-    <app-Home></app-Home>
+    
     <router-view></router-view>
     <app-footer></app-footer>
 
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Home from './components/Home'
+//import Home from './components/Home'
 import Navbar from './components/Navbar'
 import footer from './components/footer'
 
@@ -19,7 +19,7 @@ import footer from './components/footer'
 export default {
   name: 'App',
   components: {
-    'app-Home': Home,
+    
     'app-Navbar':Navbar,
     'app-footer': footer,
     
